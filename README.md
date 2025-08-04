@@ -13,16 +13,32 @@ A simple Python-based utility that automatically shuts down your computer after 
 
 ---
 
-## 🚀 How It Works
+##  How It Works
 
 The script starts a countdown (default: 1 hour), after which it automatically triggers a system shutdown command. It can include an admin password prompt to prevent unauthorized usage.
 
 ---
 
-## 🛠️ Installation
+## Installation
 
 1. **Clone the repository:**
 ```bash
 git clone https://github.com/your-username/auto-shutdown-timer.git
+ ```
 
-2. 
+## Creating .exe
+1. **Navigate to the folder:**
+```bash
+cd Timer
+ ```
+
+2. **Install pyinstaller (if not yet installed)**
+```bash
+pip install pyinstaller
+ ```
+
+3. **Build the executable**
+```bash
+pyinstaller --onefile --noconsole --icon=icon.ico timer.py
+ ```
+
